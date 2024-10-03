@@ -34,7 +34,7 @@ class RealtimePlotWindow:
         # that's our plotbuffer
         self.plotbuffer = np.zeros(500)
         # create an empty line
-        self.line, = self.ax.plot(self.plotbuffer[:250])
+        self.line, = self.ax.plot(freq, self.plotbuffer[:250])
         # axis
         self.ax.set_ylim(0, 60)
         # That's our ringbuffer which accumluates the samples
